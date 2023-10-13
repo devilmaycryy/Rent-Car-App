@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".view.activity.AddDriverLicenceActivity">
+
+    <TextView
+        android:id="@+id/getApproved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/get_approved_to_drive"
+        android:textColor="@color/white"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintTop_toBottomOf="@id/guideline57"
+        app:layout_constraintStart_toEndOf="@id/guideline55"
+        app:layout_constraintEnd_toStartOf="@id/guideline56"/>
+
+    <TextView
+        android:id="@+id/informationText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/message_for_user"
+        android:textColor="@color/white"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        app:layout_constraintTop_toBottomOf="@id/getApproved"
+        app:layout_constraintStart_toEndOf="@id/guideline55"
+        app:layout_constraintEnd_toStartOf="@id/guideline56"/>
+
+    <EditText
+        android:id="@+id/driverLicenceNumber"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_edittext_credit_card"
+        android:ems="10"
+        android:hint="@string/driver_licence_number"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        app:layout_constraintEnd_toStartOf="@id/guideline56"
+        app:layout_constraintStart_toEndOf="@id/guideline55"
+        app:layout_constraintTop_toBottomOf="@id/informationText" />
+
+    <TextView
+        android:id="@+id/dateIssuingDriverLicence"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_textview"
+        android:gravity="center_vertical"
+        android:text="@string/choose_date_time"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:onClick="pickDateIssuingDriverLicence"
+        app:layout_constraintEnd_toStartOf="@id/guideline56"
+        app:layout_constraintStart_toEndOf="@id/guideline55"
+        app:layout_constraintTop_toBottomOf="@id/driverLicenceNumber" />
+
+    <TextView
+        android:id="@+id/dateValidUntilDriverLicence"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_textview"
+        android:gravity="center_vertical"
+        android:text="@string/choose_date_time"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:onClick="pickDateValidUntilDriverLicence"
+        app:layout_constraintEnd_toStartOf="@id/guideline56"
+        app:layout_constraintStart_toEndOf="@id/guideline55"
+        app:layout_constraintTop_toBottomOf="@id/dateIssuingDriverLicence" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button2"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/blue"
+        android:text="@string/next"
+        android:textSize="17sp"
+        android:onClick="addDriverLicence"
+        app:cornerRadius="5dp"
+        app:layout_constraintTop_toBottomOf="@id/dateValidUntilDriverLicence"
+        app:layout_constraintEnd_toStartOf="@id/guideline56"
+        app:layout_constraintStart_toEndOf="@id/guideline55" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline57"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="39dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

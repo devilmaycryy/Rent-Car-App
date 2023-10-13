@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.RentCarApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/black</item>
+    </style>
+
+    <style name="FloatingButton.Color" parent="ThemeOverlay.Material3.FloatingActionButton.Primary">
+        <item name="colorContainer">@color/blue</item>
+        <item name="colorOnContainer">@color/white</item>
+    </style>
+
+    <style name="Theme.RentCarApp" parent="Base.Theme.RentCarApp" />
+</resources>

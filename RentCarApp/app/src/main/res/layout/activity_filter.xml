@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:contentDescription="@string/app_name"
+    android:background="@color/black"
+    tools:context=".view.activity.FilterActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/priceFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price"
+            android:textColor="@color/white"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintTop_toBottomOf="@id/guideline38"
+            app:layout_constraintStart_toEndOf="@id/guideline36"
+            app:layout_constraintEnd_toStartOf="@id/guideline37"/>
+
+        <TextView
+            android:id="@+id/transmissionFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/transmission"
+            android:textColor="@color/white"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintTop_toBottomOf="@id/checkChilderChair"
+            app:layout_constraintStart_toEndOf="@id/guideline36"
+            app:layout_constraintEnd_toStartOf="@id/guideline37"/>
+
+        <TextView
+            android:id="@+id/typeOfFuelFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/type_of_fuel"
+            android:textColor="@color/white"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintTop_toBottomOf="@id/checkMechanic"
+            app:layout_constraintStart_toEndOf="@id/guideline36"
+            app:layout_constraintEnd_toStartOf="@id/guideline37"/>
+
+        <RadioButton
+            android:id="@+id/checkChilderChair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/children_chair"
+            android:textColor="@color/white"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintTop_toBottomOf="@id/priceSlider"
+            app:layout_constraintStart_toEndOf="@id/guideline36"
+            app:layout_constraintEnd_toStartOf="@id/guideline37"/>
+
+        <RadioButton
+            android:id="@+id/checkAutomaton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/automaton"
+            android:textColor="@color/white"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintTop_toBottomOf="@id/transmissionFilter"
+            app:layout_constraintStart_toEndOf="@id/guideline36"
+            app:layout_constraintEnd_toStartOf="@id/guideline37"/>
+
+        <RadioButton
+            android:id="@+id/checkMechanic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/mechanic"
+            android:textColor="@color/white"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintTop_toBottomOf="@id/checkAutomaton"
+            app:layout_constraintStart_toEndOf="@id/guideline36"
+            app:layout_constraintEnd_toStartOf="@id/guideline37"/>
+
+        <RadioButton
+            android:id="@+id/checkGasoline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/gasoline"
+            android:textColor="@color/white"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintTop_toBottomOf="@id/typeOfFuelFilter"
+            app:layout_constraintStart_toEndOf="@id/guideline36"
+            app:layout_constraintEnd_toStartOf="@id/guideline37"/>
+
+        <RadioButton
+            android:id="@+id/checkDiesel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/diesel"
+            android:textColor="@color/white"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintTop_toBottomOf="@id/checkGasoline"
+            app:layout_constraintStart_toEndOf="@id/guideline36"
+            app:layout_constraintEnd_toStartOf="@id/guideline37"/>
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/apply"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/apply"
+            android:textSize="17sp"
+            android:backgroundTint="@color/blue"
+            android:onClick="apply"
+            app:cornerRadius="5dp"
+            app:layout_constraintTop_toBottomOf="@id/checkDiesel"
+            app:layout_constraintStart_toEndOf="@id/guideline36"
+            app:layout_constraintEnd_toStartOf="@id/guideline37"/>
+
+        <com.google.android.material.slider.RangeSlider
+            android:id="@+id/priceSlider"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:contentDescription="@string/app_name"
+            android:stepSize="10"
+            android:valueFrom="1300"
+            android:valueTo="3000"
+            app:layout_constraintTop_toBottomOf="@id/priceFilter"
+            app:layout_constraintEnd_toStartOf="@id/guideline37"
+            app:layout_constraintStart_toEndOf="@id/guideline36"
+            app:values="@array/initial_slider_values"
+            tools:layout_editor_absoluteY="144dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="20dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="20dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="27dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

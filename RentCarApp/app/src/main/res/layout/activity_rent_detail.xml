@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="@string/app_name"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        tools:context=".view.activity.RentDetailActivity">
+
+        <TextView
+            android:id="@+id/rentDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rent_details"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@id/guideline84"
+            app:layout_constraintStart_toEndOf="@id/guideline83"
+            app:layout_constraintTop_toBottomOf="@id/guideline85" />
+
+        <TextView
+            android:id="@+id/idCarLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/id_car"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@id/guideline83"
+            app:layout_constraintTop_toBottomOf="@id/guideline86" />
+
+        <TextView
+            android:id="@+id/rentIDCar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AASDL01"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@id/guideline83"
+            app:layout_constraintTop_toBottomOf="@id/idCarLabel" />
+
+        <TextView
+            android:id="@+id/issuingStationLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/station_issuing"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@id/guideline83"
+            app:layout_constraintTop_toBottomOf="@id/guideline87" />
+
+        <TextView
+            android:id="@+id/issuingStationRent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Kharkiv, Southern Railway Station"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@id/guideline83"
+            app:layout_constraintTop_toBottomOf="@id/issuingStationLabel" />
+
+        <TextView
+            android:id="@+id/returnStationLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/station_return"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@id/guideline83"
+            app:layout_constraintTop_toBottomOf="@id/guideline88" />
+
+        <TextView
+            android:id="@+id/returnStationRent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Kharkiv, Southern Railway Station"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@id/guideline83"
+            app:layout_constraintTop_toBottomOf="@id/returnStationLabel" />
+
+        <TextView
+            android:id="@+id/dateIssuingLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date_issuing"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@id/guideline83"
+            app:layout_constraintTop_toBottomOf="@id/guideline89" />
+
+        <TextView
+            android:id="@+id/dateIssuingRent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="24.1.2021"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@id/guideline83"
+            app:layout_constraintTop_toBottomOf="@id/dateIssuingLabel" />
+
+        <TextView
+            android:id="@+id/dateReturnLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date_return"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@id/guideline83"
+            app:layout_constraintTop_toBottomOf="@id/guideline90" />
+
+        <TextView
+            android:id="@+id/dateReturnRent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="24.1.2021"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@id/guideline83"
+            app:layout_constraintTop_toBottomOf="@id/dateReturnLabel" />
+
+        <TextView
+            android:id="@+id/finesLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fines"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@id/guideline83"
+            app:layout_constraintTop_toBottomOf="@id/guideline91" />
+
+        <TextView
+            android:id="@+id/finesRent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="12200 ₴"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@id/guideline83"
+            app:layout_constraintTop_toBottomOf="@id/finesLabel" />
+
+        <TextView
+            android:id="@+id/sumLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sum"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@id/guideline83"
+            app:layout_constraintTop_toBottomOf="@id/guideline92" />
+
+        <TextView
+            android:id="@+id/sumRent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="12200 ₴"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@id/guideline83"
+            app:layout_constraintTop_toBottomOf="@id/sumLabel" />
+
+        <TextView
+            android:id="@+id/totalAmountLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_amount"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@id/guideline83"
+            app:layout_constraintTop_toBottomOf="@id/guideline93" />
+
+        <TextView
+            android:id="@+id/amountRent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="12200 ₴"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@id/guideline83"
+            app:layout_constraintTop_toBottomOf="@id/totalAmountLabel" />
+
+        <TextView
+            android:id="@+id/statusLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/status"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@id/guideline83"
+            app:layout_constraintTop_toBottomOf="@id/guideline94" />
+
+        <TextView
+            android:id="@+id/statusRent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="No Return"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@id/guideline83"
+            app:layout_constraintTop_toBottomOf="@id/statusLabel" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/returnCar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue"
+            android:text="@string/return_car"
+            android:textSize="17sp"
+            app:cornerRadius="5dp"
+            app:layout_constraintTop_toBottomOf="@id/guideline95"
+            app:layout_constraintEnd_toStartOf="@id/guideline84"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cancelRent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/red"
+            android:text="@string/cancel_rent"
+            android:textSize="17sp"
+            android:onClick="onCancelRent"
+            app:cornerRadius="5dp"
+            app:layout_constraintTop_toBottomOf="@id/guideline95"
+            app:layout_constraintStart_toEndOf="@id/guideline83"/>
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline83"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="20dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline84"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="20dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline85"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="33dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline86"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="98dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline87"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="173dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline88"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="257dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline89"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="341dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="424dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline91"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="513dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline92"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="608dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline93"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="691dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline94"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="782dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline95"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="881dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
